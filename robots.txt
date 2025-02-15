@@ -1,0 +1,11 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://pj-develop.github.io/VCDOS/sitemap.xml
+
+# Disallow sensitive routes
+Disallow: /admin/
+Disallow: /login/
+Disallow: /api/ 
