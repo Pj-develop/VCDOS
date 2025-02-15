@@ -1,0 +1,28 @@
+/* @tailwind base; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-spin-nested-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.org-chart-container {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(156, 163, 175, 0.5) transparent;
+}
+
+.org-chart-container::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.org-chart-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.org-chart-container::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.5);
+  border-radius: 3px;
+}
