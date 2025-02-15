@@ -5,7 +5,7 @@ A comprehensive multi-level vendor management system for fleet operations, vehic
 
 ## 🌐 Live Demo
 
-Visit the live application at: [https://pj-develop.github.io/login](https://pj-develop.github.io/login)
+Visit the live application at: [https://pj-develop.github.io/VCDOS/](https://pj-develop.github.io/VCDOS/)
 
 ### Demo Credentials
 
