@@ -1,16 +1,14 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ChevronDown, Plus, Search, User, FileText, Truck, AlertCircle } from 'lucide-react';
 import type { Driver, DriverOnboardingStatus } from '../types/vendor';
 import { useDriverStore } from '../stores/driverStore';
 import { AddDriverModal } from '../components/AddDriverModal';
+import { ManageDriverModal } from '../components/ManageDriverModal';
 
 export default function DriverList() {
   const { 
-    drivers, 
-    loading, 
+    drivers,
     addDriver,
-    getDriversByVendor,
-    getPendingVerifications,
     updateOnboardingStatus,
     uploadDocument 
   } = useDriverStore();
@@ -252,9 +250,3 @@ export default function DriverList() {
     </div>
   );
 }
-
-// Add these components in separate files in practice
-const ManageDriverModal = ({ driver, onClose, onUploadDocument, onUpdateStatus }: any) => {
-  // Implementation for managing existing driver
-  return null; // TODO: Implement modal UI
-};

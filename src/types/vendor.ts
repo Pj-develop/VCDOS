@@ -83,6 +83,8 @@ export interface Driver {
   updatedAt: string;
 }
 
+export type DocumentStatus = 'valid' | 'expired' | 'pending' | 'rejected';
+
 export interface Vehicle {
   id: string;
   registrationNumber: string;
@@ -92,11 +94,11 @@ export interface Vehicle {
   fuelType: string;
   vendorId: string;
   driverId?: string;
-  status: 'active' | 'inactive';
+  status: 'active' | 'inactive' | 'suspended';
   documents: {
-    registration: string;
-    insurance: string;
-    permit: string;
+    registration: DocumentStatus;
+    insurance: DocumentStatus;
+    permit: DocumentStatus;
   };
 }
 
